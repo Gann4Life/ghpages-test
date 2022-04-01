@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/ghpages-test/static/css/main.073c9b0a.css",
-    "main.js": "/ghpages-test/static/js/main.f24c447d.js",
+    "main.css": "/ghpages-test/static/css/main.d54eb18a.css",
+    "main.js": "/ghpages-test/static/js/main.79f21fb9.js",
     "static/js/787.a835fd78.chunk.js": "/ghpages-test/static/js/787.a835fd78.chunk.js",
-    "static/media/logo.svg": "/ghpages-test/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ghpages-test/index.html",
-    "main.073c9b0a.css.map": "/ghpages-test/static/css/main.073c9b0a.css.map",
-    "main.f24c447d.js.map": "/ghpages-test/static/js/main.f24c447d.js.map",
+    "main.d54eb18a.css.map": "/ghpages-test/static/css/main.d54eb18a.css.map",
+    "main.79f21fb9.js.map": "/ghpages-test/static/js/main.79f21fb9.js.map",
     "787.a835fd78.chunk.js.map": "/ghpages-test/static/js/787.a835fd78.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f24c447d.js"
+    "static/css/main.d54eb18a.css",
+    "static/js/main.79f21fb9.js"
   ]
 }
