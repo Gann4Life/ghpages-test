@@ -1,20 +1,30 @@
 import "./App.css"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Container } from "react-bootstrap";
+import { Container, Tabs, Tab } from "react-bootstrap";
+import { useState } from "react"
 
 // Components
-import Navbar from "./components/Navbar"
-import ThirdymPage from "./ThirdymPage"
+import Home from "./components/Home"
+import Contact from "./components/Contact"
 
 function App() {
+
+	const [key, setKey] = useState("home")
+
 	return (
 		<Container fluid>
-			<BrowserRouter>
-				<Routes>
-					<Route path={process.env.PUBLIC_URL + "/"} element={<Navbar/>}/>
-					<Route path={process.env.PUBLIC_URL + "/thirdym"} element={<ThirdymPage/>}/>
-				</Routes>
-			</BrowserRouter>
+			<Tabs 
+				id="controlled-tab-example" 
+				activeKey={key}
+				onSelect={(k) => setKey(k)}
+				className="mb-3"
+			>
+                <Tab eventKey="home" title="Home">
+                    <Home/>
+                </Tab>
+                <Tab eventKey="contact" title="Contact">
+                    <Contact onClick={() => setKey("home")}/>
+                </Tab>
+            </Tabs>
 		</Container>
 	);
 }

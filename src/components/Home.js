@@ -17,7 +17,7 @@ export default class Home extends Component {
                 image="/img/banners/home_banner.png"/>
 
                 <Row>
-                    <Col lg>
+                    <Col md>
                         <SimpleCard 
                             image={process.env.PUBLIC_URL + "/img/thumbnails/gann4art.png"}
                             title="Discord Server"
@@ -25,15 +25,15 @@ export default class Home extends Component {
                             href="https://discord.gg/8USgTyxkKZ"
                         />
                     </Col>
-                    <Col lg>
+                    <Col md>
                         <SimpleCard 
                             image={process.env.PUBLIC_URL + "/img/thumbnails/thirdym.png"}
                             title="Thirdym"
                             text="Third person tactical shooter inspired on Plazma Burst series"
-                            href="/thirdym"
+                            href="https://gann4life.itch.io/thirdym"
                         />
                     </Col>
-                    <Col lg>
+                    <Col md>
                         <SimpleCard 
                             image={process.env.PUBLIC_URL + "/img/thumbnails/toribash.png"}
                             title="Toribash"
