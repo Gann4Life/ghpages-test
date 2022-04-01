@@ -1,26 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Container } from "react-bootstrap";
+
+// Components
+import Navbar from "./components/Navbar"
+import ThirdymPage from "./ThirdymPage"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello World.</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Container fluid>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Navbar/>}/>
+					<Route path="/thirdym" element={<ThirdymPage/>}/>
+				</Routes>
+			</BrowserRouter>
+		</Container>
+	);
 }
 
 export default App;
