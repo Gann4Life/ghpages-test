@@ -11,8 +11,8 @@ function App() {
 		<Container fluid>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<Navbar/>}/>
-					<Route path="/thirdym" element={<ThirdymPage/>}/>
+					<Route path={process.env.PUBLIC_URL + "/"} element={<Navbar/>}/>
+					<Route path={process.env.PUBLIC_URL + "/thirdym"} element={<ThirdymPage/>}/>
 				</Routes>
 			</BrowserRouter>
 		</Container>
